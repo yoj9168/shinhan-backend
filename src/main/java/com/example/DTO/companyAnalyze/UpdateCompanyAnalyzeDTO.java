@@ -1,4 +1,4 @@
-package com.example.DTO;
+package com.example.DTO.companyAnalyze;
 
 import com.example.domain.entity.Opinion;
 import lombok.Getter;
@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 
 @RequiredArgsConstructor
 @Getter
-public class PostCompanyAnalyzeDTO {
+public class UpdateCompanyAnalyzeDTO {
     private final String name;
     private final Opinion opinion;
     private final String explanation;

@@ -1,4 +1,4 @@
-package com.example.DTO;
+package com.example.DTO.movie;
 
 import com.example.domain.entity.Movie;
 import lombok.Builder;

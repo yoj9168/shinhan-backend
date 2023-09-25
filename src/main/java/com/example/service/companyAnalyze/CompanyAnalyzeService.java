@@ -1,8 +1,8 @@
-package com.example.service;
+package com.example.service.companyAnalyze;
 
-import com.example.DTO.PostCompanyAnalyzeDTO;
-import com.example.DTO.ResponseCompanyAnalyzeDTO;
-import com.example.DTO.UpdateCompanyAnalyzeDTO;
+import com.example.DTO.companyAnalyze.PostCompanyAnalyzeDTO;
+import com.example.DTO.companyAnalyze.ResponseCompanyAnalyzeDTO;
+import com.example.DTO.companyAnalyze.UpdateCompanyAnalyzeDTO;
 import com.example.domain.entity.Opinion;
 import com.example.domain.entity.CompanyAnalyze;
 import lombok.RequiredArgsConstructor;

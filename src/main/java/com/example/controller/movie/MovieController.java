@@ -1,19 +1,16 @@
-package com.example.controller;
+package com.example.controller.movie;
 
-import com.example.DTO.PostMovieDTO;
-import com.example.DTO.ResponseMovieDTO;
-import com.example.DTO.UpdateMovieDTO;
+import com.example.DTO.movie.PostMovieDTO;
+import com.example.DTO.movie.ResponseMovieDTO;
+import com.example.DTO.movie.UpdateMovieDTO;
 import com.example.common.Response;
 import com.example.domain.entity.Movie;
-import com.example.service.MovieService;
+import com.example.service.movie.MovieService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Tag(name= "무비 컨트롤러")
 @RestController

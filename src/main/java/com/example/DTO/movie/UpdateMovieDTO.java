@@ -1,13 +1,11 @@
-package com.example.DTO;
+package com.example.DTO.movie;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @Getter
-public class PostMovieDTO {
+public class UpdateMovieDTO {
     private final String name;
     private final Integer productionYear;
 }

@@ -1,18 +1,16 @@
-package com.example.service;
+package com.example.service.movie;
 
-import com.example.DTO.PostMovieDTO;
-import com.example.DTO.ResponseMovieDTO;
-import com.example.DTO.UpdateMovieDTO;
+import com.example.DTO.movie.PostMovieDTO;
+import com.example.DTO.movie.ResponseMovieDTO;
+import com.example.DTO.movie.UpdateMovieDTO;
 import com.example.domain.entity.Movie;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import javax.annotation.PostConstruct;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.NoSuchElementException;
 
 @Service
 @RequiredArgsConstructor

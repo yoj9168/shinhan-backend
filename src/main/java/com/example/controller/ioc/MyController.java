@@ -1,9 +1,8 @@
-package com.example.controller;
+package com.example.controller.ioc;
 
 import com.example.config.MyConfig;
-import com.example.service.MyService;
+import com.example.service.ioc.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpMethod;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

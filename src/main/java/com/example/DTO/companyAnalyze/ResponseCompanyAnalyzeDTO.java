@@ -1,4 +1,4 @@
-package com.example.DTO;
+package com.example.DTO.companyAnalyze;
 
 import com.example.domain.entity.CompanyAnalyze;
 import lombok.Builder;

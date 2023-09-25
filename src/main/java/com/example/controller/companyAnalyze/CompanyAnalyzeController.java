@@ -1,13 +1,11 @@
-package com.example.controller;
+package com.example.controller.companyAnalyze;
 
-import com.example.DTO.PostCompanyAnalyzeDTO;
-import com.example.DTO.ResponseCompanyAnalyzeDTO;
-import com.example.DTO.UpdateCompanyAnalyzeDTO;
+import com.example.DTO.companyAnalyze.PostCompanyAnalyzeDTO;
+import com.example.DTO.companyAnalyze.ResponseCompanyAnalyzeDTO;
+import com.example.DTO.companyAnalyze.UpdateCompanyAnalyzeDTO;
 import com.example.common.Response;
-import com.example.domain.entity.CompanyAnalyze;
-import com.example.service.CompanyAnalyzeService;
+import com.example.service.companyAnalyze.CompanyAnalyzeService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
