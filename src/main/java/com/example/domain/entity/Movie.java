@@ -1,21 +1,48 @@
 package com.example.domain.entity;
 
+import com.example.repository.DirectorRepository;
 import lombok.*;
+import org.hibernate.annotations.Cascade;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
-@AllArgsConstructor
-@NoArgsConstructor
+@Entity
+@Table(name="movie")
 @Getter
-@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Movie {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String name;
-    private Integer productionYear;
-    private LocalDateTime createdAt;
 
-    public void update(String name, Integer productionYear) {
+    @Column(name = "name")
+    private String name;
+
+    @Column(name = "production_year")
+    private LocalDateTime productionYear;
+
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "director_id")
+    private Director director;
+
+    @OneToMany(mappedBy = "movie", fetch = FetchType.EAGER
+    ,cascade = CascadeType.ALL,
+    orphanRemoval = true)
+    private List<Actor> actors;
+
+    @Column(name = "created_at")
+    private LocalDateTime createdAt = LocalDateTime.now();
+
+    public void update(String name, LocalDateTime productionYear) {
         this.name = name;
         this.productionYear = productionYear;
+    }
+    public Movie(String name, LocalDateTime productionYear, Director director){
+        this.name = name;
+        this.productionYear = productionYear;
+        this.director = director;
     }
 }
