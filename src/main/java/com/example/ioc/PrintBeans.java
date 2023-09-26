@@ -20,17 +20,17 @@ public class PrintBeans {
 
     @Bean
     public void printBeansMethod() {
-        MyConfig myConfig1 = applicationContext.getBean(MyConfig.class);
-        MyConfig myConfig2 = applicationContext.getBean(MyConfig.class);
-        MyConfig myConfig3 = applicationContext.getBean(MyConfig.class);
+//        MyConfig myConfig1 = applicationContext.getBean(MyConfig.class);
+//        MyConfig myConfig2 = applicationContext.getBean(MyConfig.class);
+//        MyConfig myConfig3 = applicationContext.getBean(MyConfig.class);
 
-        System.out.println(myConfig);
-        System.out.println(myConfig);
-        System.out.println(myConfig);
-
-        System.out.println(myConfigProto);
-        System.out.println(myConfigProto);
-        System.out.println(myConfigProto);
+//        System.out.println(myConfig);
+//        System.out.println(myConfig);
+//        System.out.println(myConfig);
+//
+//        System.out.println(myConfigProto);
+//        System.out.println(myConfigProto);
+//        System.out.println(myConfigProto);
 //
 //        List<String> beans = Arrays.stream(applicationContext.getBeanDefinitionNames()).toList();
 //        for (String bean : beans) {

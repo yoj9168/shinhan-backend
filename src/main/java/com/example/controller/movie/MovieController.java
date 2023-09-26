@@ -24,13 +24,13 @@ public class MovieController {
         return Response.of(movieService.getMovies());
     }
     @GetMapping("/movies/{id}")
-    public Movie getMovie(@PathVariable(value = "id") long id)
+    public ResponseMovieDTO getMovie(@PathVariable(value = "id") long id)
     {
         return movieService.getMovie(id);
     }
     @PostMapping("/movies")
-    public void createMovie(@RequestBody PostMovieDTO postMovieDTO){
-        movieService.createMovie(postMovieDTO);
+    public void saveMovie(@RequestBody PostMovieDTO postMovieDTO){
+        movieService.saveMovie(postMovieDTO);
     }
     @PutMapping("/movies/{id}")
     public void updateMovie(@PathVariable(value = "id") long id, @RequestBody UpdateMovieDTO updateMovieDTO){
