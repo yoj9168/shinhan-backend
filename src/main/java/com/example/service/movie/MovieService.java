@@ -33,7 +33,7 @@ public class MovieService {
 
     @Transactional(readOnly = true)
     public List<ResponseMovieDTO> getMovies(){
-        return movieRepository.findByProductionYear(LocalDateTime.of(2019, 11, 12, 12, 32,22)).stream().map(ResponseMovieDTO::of).toList();
+        return movieRepository.findAllJpqlFetch().stream().map(ResponseMovieDTO::of).toList();
     }
     @Transactional(readOnly = true)
     public ResponseMovieDTO getMovie(long id) {
