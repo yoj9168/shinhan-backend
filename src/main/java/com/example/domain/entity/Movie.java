@@ -26,11 +26,13 @@ public class Movie {
 
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "director_id")
+    @Setter
     private Director director;
 
     @OneToMany(mappedBy = "movie", fetch = FetchType.EAGER
     ,cascade = CascadeType.ALL,
     orphanRemoval = true)
+    @Setter
     private List<Actor> actors;
 
     @Column(name = "created_at")
